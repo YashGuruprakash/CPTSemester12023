@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="game.css">
+		<script src="game.js"></script>
+		<title></title>
+	</head>
+	<body onload = showPics() id="body">
+		<h2>Click on the "Display Text" Button first<br> and then choose the right image related to the given info</h2>
+		<button class ="hover" id ="homeButton" onclick = "goToNextPage('index.html')" ><img id="homeImage" src ="clipart21103.png"alt="homeButton"> <i class = "fa fa-home" ></i></button>
+		
+		<button onclick=displayText()>Display Text</button>
+		<p id = "displayText"></p>
+	
+		<div class="popup" id ="popup-1">
+			<div class="overlay"></div>
+			<div class="content">
+				<div class="close-btn" onclick = "togglePopUp()">&times;</div>
+				<p>Good Job! You got the answer correct!</p>
+			</div>
+		</div>
+	
+		<div class="popup2" id = "popup-2">
+			<div class = "overlay2"></div>
+			<div class = "content2">
+				<div class = "close-btn2" onclick = "incorrectTogglePopUp()">&times;</div>
+				<p>Thats not the right answer! Try again.</p>
+				</div>
+		</div>
+		
+		<div> <!---Popups: https://www.youtube.com/watch?v=iE_6pQ3RlZU&ab_channel=Codingflag-->
+		<table id ="photoTable" >
+			<tr>
+				<td img src"" class="img" id="imageFormatting"> </td>
+				<td img src"" class="img" id="imageFormatting"> </td>
+				<td img src"" class="img" id="imageFormatting"> </td>
+			</tr>
+			<tr>
+				<td  img src"" class="img" id="imageFormatting"> </td>
+				<td   img src"" class="img" id="imageFormatting"> </td>
+				<td  img src"" class="img" id="imageFormatting"> </td>
+			</tr>
+			<tr>
+				<td   img src"" class="img" id="imageFormatting"> </td>
+				<td   img src"" class="img" id="imageFormatting"> </td>
+				<td  img src"" class="img" id="imageFormatting"> </td>
+			</tr>
+		</table> 
+		</div>
+
+		<div class="header"></div>
+		<div class="footer"></div>
+		
+	</body>
+</html>

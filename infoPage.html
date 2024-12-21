@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="game.css">
+		<script src="game.js"></script>
+		<title>Info Page</title>
+	</head>
+	<body id="body">
+		<p id= "infoPageTitle">What are the basics of photography?</p>
+		<button class ="hover" id ="homeButton" onclick = "goToNextPage('index.html')"><img id="homeImage" src ="clipart21103.png"alt="homeButton"> <i class = "fa fa-home" ></i></button>
+		
+		<!--Drop Down menus are from this website: https://www.w3schools.com/css/css_dropdowns.asp-->
+		
+		<div class="dropdown">
+			<span>ISO</span>
+			<div class="dropdown-content">
+			<p>ISO controls the amount of light that your camera lets in and has a huge impact on the darkness or light in your photos. 
+				As you increase your ISO number, your photos will grow progressively brighter. However, raising your ISO has consequences.
+				 A photo taken at too high of an ISO will show a lot of grain, also known as noise, and might not be usable.
+				 So, brightening a photo via ISO is always a trade-off. ISO ranges from 100 to 6400.
+				  <!--Information from: https://photographylife.com/what-is-iso-in-photography--></p>
+				  <img id="isoImage" src = "iso.jpeg" alt = "isoImage">
+				  <!-- iso image from: https://photographylife.com/what-is-iso-in-photography -->
+			</div>
+		</div>
+
+		<div class="dropdown1">
+			<span>Shutter Speed</span>
+			<div class="dropdown1-content">
+			<p>
+				Shutter speed is the length of time the camera shutter is open, exposing light onto the camera sensor. 
+				When you use a long shutter speed (also known as a “slow” shutter speed), you end up exposing your sensor for a significant period of time. 
+				The first big effect of it is motion blur. A lower shutter speed means objects will be blurred.
+				On the other hand, shutter speed can also be used to do just the opposite 
+				freeze motion.Shutter speeds are typically measured in fractions of a second when they are under a second. For example, 1/4 means a quarter of a second,
+				 while 1/250 means one-two-hundred-and-fiftieth of a second (or four milliseconds). A higher shutter speed can also result in a brighter photo.
+				<!--Information from: https://photographylife.com/what-is-shutter-speed-in-photography--></p>
+				<img id="shutterSpeedImage" src = "shutterspeed.jpeg" alt = "isoImage">
+				<!-- shutter speed image: https://www.greencastlephotos.com/blog-1/2017/11/21/begginers-guides-to-photography -->
+
+			</div>
+		</div>
+		
+		<div class="dropdown2">
+			<span>Aperture</span>
+			<div class="dropdown2-content">
+			<p>
+				Aperture can be defined as the opening in a lens through which light passes to enter the camera. It is an easy concept to understand
+			if you just think about how your eyes work. As you move between bright and dark environments, the iris in your eyes either expands or shrinks, controlling the size of your pupil.
+			Aperture can add dimension to your photos by controlling depth of field the other extreme, it will give you sharp photos from the nearby foreground to the distant horizon.
+			Aperture can also affect the brightness of your photo as the larger the aperture gets the less light gets into the camera, and vice versa.
+				<!--Information from: https://photographylife.com/what-is-aperture-in-photography--></p>
+				<img id="apertureImage" src = "aperature.png" alt = "isoImage">
+				<!-- apertureImage from: https://lenscraft.co.uk/photography-tutorials/tutorial-what-is-an-f-stop/ -->
+				
+			</div>
+		</div>
+		<div class="header"></div>
+		<div class="footer"></div>
+	</body>
+</html>
